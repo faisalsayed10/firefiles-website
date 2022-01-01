@@ -1,0 +1,29 @@
+---
+sidebar_position: 2
+---
+
+# Deploy your Firefiles Instance
+
+It is now time to deploy our own Firefiles instance.
+
+## Deployment with Vercel
+
+We will use [Vercel](https://vercel.com?utm_source=firefiles&utm_medium=docs) to deploy our instance. However, you can use any other hosting service which supports Next.js. Go ahead and create an account on Vercel if you haven't already. (It's free!)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ffaisalsayed10%2Ffirefiles%2Ftree%2Fself-host&env=NEXT_PUBLIC_FIREBASE_API_KEY,NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,NEXT_PUBLIC_FIREBASE_PROJECT_ID,NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,NEXT_PUBLIC_FIREBASE_APP_ID&envDescription=Required%20credentials%20for%20the%20instance%20to%20work&envLink=https%3A%2F%2Fgithub.com%2Ffaisalsayed10%2Ffirefiles%2Ftree%2Fself-host%23environment-variables&project-name=firefiles)
+
+Click on the button above. You will be asked to provide your Firebase credentials. To find these credentials, go to your project console and click on the settings icon on the top left. If you scroll a bit down in the `General` tab, you'll find your config values!
+
+![firebase-config](/img/tutorial/firebase-config.png)
+
+Add these values one by one in the Environment variables asked to deploy the project.
+
+![vercel-environment-variables](/img/tutorial/vercel-environment-variables.png)
+
+And finally, click on the `Deploy` button!
+
+![vercel-deployed](/img/tutorial/vercel-deployed.png)
+
+You can configure the domain of your instance in Vercel's project settings. And now you can login to your instance and start using Firefiles!
+
+![nice](https://media.giphy.com/media/SYzDscQMN98G0LUHib/giphy.gif)
