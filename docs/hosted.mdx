@@ -1,0 +1,15 @@
+---
+sidebar_position: 2
+---
+import EmailForm from "../src/components/EmailForm";
+
+# Hosted Instance
+
+Here are some important things about the hosted instance.
+
+## Security Rules
+Currently, the hosted instance will only work if your Firebase Cloud Storage's security rules are set to `allow read, write: if true;`. This rule should NEVER be used in a production environment as it allows anyone with your API keys to access your cloud storage. This is why we currently recommend you to only use the hosted instance for personal use or you may try the [self-hosted](/docs/self-hosted/firebase-setup) instance.
+
+However, this issue is currently our top-priority and we believe it to get fixed very soon. If you'd like to get notified when the issue is fixed, you may enter your email below:
+
+<EmailForm />

@@ -2,34 +2,19 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Hosted vs Self Hosted
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Let's see what are the differences between self-hosting your own instance or using a hosted instance.
 
-## Getting Started
+|             | Hosted                                                        | Self Hosted                  |
+| ----------- | ------------------------------------------------------------- | ---------------------------- |
+| What is it? | We manage the main Firefiles instance                         | You manage your own instance |
+| Features    | All                                                           | All                          |
+| Pricing     | Free (while in beta)                                          | Free                         |
+| Security    | Config encrypted with AES-256                                 | Config stays with you        |
+| Background  | Ideal for everyone                                            | Ideal for technical people   |
+| Usage       | Only Personal Use ([Read for more information](/docs/hosted#security-rules)) | All                          |
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npm init docusaurus@latest my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and displays your changes.
+:::caution
+We are currently trying to fix a top-level issue which is a blocker for the hosted instance and you can only use it for personal use. ([Read for more information](/docs/hosted#security-rules))
+:::
