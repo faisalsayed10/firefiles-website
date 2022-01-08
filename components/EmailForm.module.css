@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
-input {
-	appearance: none;
-	border-radius: 0;
-}
-
 .card {
 	margin: 2rem auto;
 	display: flex;
@@ -18,6 +13,8 @@ input {
 	display: flex;
 	flex-direction: column-reverse;
 	position: relative;
+	appearance: none;
+	border-radius: 0;
 }
 
 .inputlabel {
@@ -52,7 +49,7 @@ input {
 }
 
 .actionbutton {
-  cursor: pointer;
+	cursor: pointer;
 	font: inherit;
 	font-size: 1rem;
 	padding: 0.5em;
