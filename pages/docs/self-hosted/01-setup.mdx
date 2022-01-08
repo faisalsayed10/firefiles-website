@@ -1,3 +1,5 @@
+import Callout from "nextra-theme-docs/callout";
+
 # Setup
 
 Let's first setup our Firebase project. (This guide is beginner-friendly, so if you have 0 experience with Firebase, you'll still be able to follow along.)
@@ -51,7 +53,7 @@ OR
 
 ```
 // Allow only our user to access the bucket.
-allow read, write: if request.auth.uid == <the uid of the user which we created>;
+allow read, write: if request.auth.uid == '<the uid of the user which we created>';
 ```
 
 **NOTE:** Grab the `uid` of the user from the `Users` tab in the `Authentication` section of the console.
@@ -60,8 +62,4 @@ allow read, write: if request.auth.uid == <the uid of the user which we created>
 
 Once you are done with changing the security rules, click on `Publish` and your bucket is ready!
 
-:::success
-
-Yay! We're all set up! Now it's time to deploy!
-
-:::
+<Callout emoji="✅">Yay! We're all set up and now it's time to deploy!</Callout>

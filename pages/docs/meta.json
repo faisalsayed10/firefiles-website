@@ -1,5 +1,6 @@
 {
 	"index": "Introduction",
-	"cloud": "Cloud",
+	"get-started": "Get Started",
+	"hosted": "Hosted",
 	"self-hosted": "Self Host"
 }

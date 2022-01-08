@@ -1,8 +1,7 @@
-// theme.config.js
 export default {
 	projectLink: "https://github.com/faisalsayed10/firefiles",
 	docsRepositoryBase: "https://github.com/faisalsayed10/firefiles-landing/blob/main",
-	titleSuffix: " – Nextra",
+	titleSuffix: " – Firefiles",
 	nextLinks: true,
 	prevLinks: true,
 	search: true,
