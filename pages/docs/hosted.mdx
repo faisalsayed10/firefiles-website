@@ -1,0 +1,33 @@
+import EmailForm from "../../components/EmailForm";
+import Callout from "nextra-theme-docs/callout";
+
+# Firefiles Hosted
+
+Here are some important things about the hosted instance.  
+Follow [the first section](/docs/self-hosted/01-setup#creating-a-new-firebase-project) of the self host documentation if you want to get help creating a new Firebase project.
+
+## Authentication
+We currently have a system where we create a temporary user in your Firebase project through which we are able to access your storage bucket. 
+In order for this to work properly, make sure you have enabled `Email/Password` authentication in your Firebase project.
+
+![firebase-email-auth](/firebase-auth-enabled.png)
+
+<Callout emoji="💡">Quick Fix: <br /> If you're getting any errors regarding authentication such as `Wrong Password` etc. (only for the temporary user). Head over to the `Authentication` section and delete the user which Firefiles would have created.</Callout>
+
+The email of the temporary user will be something like --> `youremail+firefiles@yourdomain.com`. This is because any email to that address will be redirected to your original email. (basically Gmail ignores anything after `+` and before `@`).  
+And the password will be a randomly generated string. Even we don't know what the password will be.
+
+## Security Rules
+You'll need to tweak the security rules of your storage bucket in order for Firefiles to work.
+The default security rules would be something like:
+
+![default-security-rules](/firebase-default-rules.png)
+
+These rules are fine and would work. But if you have different rules set up (maybe because it might be your production project), then you can tweak them to be something like:
+
+![custom-security-rules](/firebase-security-rules.png)
+
+This way, you can still have your rules and also a separate read/write rule for Firefiles. (line 5 of the image)  
+**NOTE:** Change the `uid` to the `uid` of the user which will be created by Firefiles. (Get the `uid` from the `Authentication` section of your Firebase project)
+
+If you're still facing any issues, please feel free to reach out to us by [emailing us](mailto://firefiles-support@fayd.me) or by creating an issue at our [Github page](https://github.com/faisalsayed10/firefiles)
