@@ -6,14 +6,14 @@ interface Props {}
 
 const Pricing = (props: Props) => {
 	return (
-		<section className="text-gray-600 body-font overflow-hidden">
+		<section className="text-gray-600 body-font overflow-hidden" id="pricing">
 			<div className="container px-5 mx-auto pb-20">
 				<div className="text-center mb-20">
 					<h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
 						Pricing
 					</h1>
 					<p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-						Flexible and cheap. Choose from self-hosting or using the hosted instance.
+						Flexible and cheap. Choose from hosting it yourself or using the hosted version.
 					</p>
 					<div className="flex mt-6 justify-center">
 						<div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>

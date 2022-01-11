@@ -5,16 +5,16 @@ const Navbar = () => {
 		<div className="flex justify-between items-center absolute w-full z-50 px-4 my-2">
 			<img className="h-16 w-16" src="/firefiles-logo.png" alt="logo" />
 			<div className="flex items-center justify-evenly w-1/2">
-				<a href="#" className="text-xl font-medium text-gray-500 hover:text-gray-900 mx-1">
+				<a href="#about" className="text-xl font-medium text-gray-500 hover:text-gray-900 mx-1">
 					About
 				</a>
-				<a href="#" className="text-xl font-medium text-gray-500 hover:text-gray-900 mx-1">
+				<a href="#features" className="text-xl font-medium text-gray-500 hover:text-gray-900 mx-1">
 					Features
 				</a>
-				<a href="#" className="text-xl font-medium text-gray-500 hover:text-gray-900 mx-1">
+				<a href="#use-cases" className="text-xl font-medium text-gray-500 hover:text-gray-900 mx-1">
 					Use Cases
 				</a>
-				<a href="#" className="text-xl font-medium text-gray-500 hover:text-gray-900 mx-1">
+				<a href="#pricing" className="text-xl font-medium text-gray-500 hover:text-gray-900 mx-1">
 					Pricing
 				</a>
 			</div>

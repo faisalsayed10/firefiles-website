@@ -11,7 +11,7 @@ const Hero = () => {
 						initial={{ scale: 0.5, opacity: 0, skewX: "-5deg" }}
 						animate={{ scale: 1, opacity: 1, skewX: "0deg" }}
 						transition={{ duration: 0.7, ease: "backOut" }}
-						className="font-semibold text-8xl"
+						className="font-semibold text-6xl md:text-8xl"
 					>
 						Firefiles
 					</motion.h1>
@@ -19,7 +19,7 @@ const Hero = () => {
 						initial={{ scale: 0.5, opacity: 0, skewX: "-5deg" }}
 						animate={{ scale: 1, opacity: 1, skewX: "0deg" }}
 						transition={{ duration: 0.7, ease: "backOut" }}
-						className="text-3xl"
+						className="text-xl md:text-3xl text-center"
 					>
 						Get your own file hosting service in minutes.
 					</motion.p>
@@ -39,9 +39,9 @@ const Hero = () => {
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
 										d="M13 10V3L4 14h7v7l9-11h-7z"
 									></path>
 								</svg>

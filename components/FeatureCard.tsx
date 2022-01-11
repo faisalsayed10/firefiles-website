@@ -7,15 +7,15 @@ interface Props {
 
 const FeatureCard: React.FC<Props> = ({ title, subtitle }) => {
 	return (
-		<div className="flex flex-wrap items-center justify-around max-w-4xl sm:w-full">
-			<div className="border p-6 text-left w-96 rounded-xl">
+		<div className="flex flex-wrap items-center justify-around max-w-4xl sm:w-full z-10">
+			<div className="border p-6 text-left w-96 rounded-xl bg-white">
 				<div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
 					<svg
 						fill="none"
 						stroke="currentColor"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						strokeWidth="2"
 						className="w-6 h-6"
 						viewBox="0 0 24 24"
 					>
