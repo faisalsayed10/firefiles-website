@@ -5,10 +5,18 @@ interface Props {}
 const UseCases = (props: Props) => {
 	return (
 		<section className="text-gray-600 body-font min-h-screen">
-			<div className="container px-5 mx-auto">
-				<h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900 text-center">
-					Use Cases
-				</h1>
+			<div className="container px-5 mx-auto pb-20">
+				<div className="text-center mb-20">
+					<h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+						Use Cases
+					</h1>
+					<p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+						Few reasons why you should use Firefiles.
+					</p>
+					<div className="flex mt-6 justify-center">
+						<div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+					</div>
+				</div>
 				<div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
 					<div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
 						<svg
