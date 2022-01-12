@@ -4,7 +4,7 @@ const Navbar = () => {
 	return (
 		<div className="flex justify-between items-center absolute w-full z-50 px-4 my-2">
 			<img className="h-16 w-16" src="/firefiles-logo.png" alt="logo" />
-			<div className="flex items-center justify-evenly w-1/2">
+			<div className="hidden items-center justify-evenly w-3/5 sm:flex">
 				<a href="#about" className="text-lg font-normal text-gray-500 hover:text-gray-900 mx-1">
 					About
 				</a>

@@ -20,7 +20,6 @@ export default function Home() {
 		<div className="main">
 			<Head>
 				<title>Firefiles</title>
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar />
 			<Hero />
