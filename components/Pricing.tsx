@@ -42,7 +42,7 @@ const Pricing = (props: Props) => {
 							<p className="flex items-center text-gray-600 mb-6">
 								<Check /> Instant updates.
 							</p>
-							<a href="https://firefiles.vercel.app" target="_blank" className="mt-auto">
+							<a href="https://usefirefiles.vercel.app" target="_blank" className="mt-auto">
 								<button className="flex items-center text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">
 									Try Now <ArrowRight />
 								</button>

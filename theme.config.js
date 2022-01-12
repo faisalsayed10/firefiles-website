@@ -12,7 +12,8 @@ export default {
 	footerEditLink: `Edit this page on GitHub`,
 	logo: (
 		<>
-			<span>Firefiles</span>
+			<img src="/firefiles-logo.png" width="32" height="32" />
+			<span style={{ marginLeft: "2px" }}>Firefiles</span>
 		</>
 	),
 	head: (

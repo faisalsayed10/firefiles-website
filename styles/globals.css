@@ -8,8 +8,11 @@
 }
 
 .main {
-	/* scroll-behavior: smooth; */
 	font-family: "Poppins", sans-serif;
+	background-image: url("/wave-haikei.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
 }
 
 .hero-bg {
@@ -41,3 +44,10 @@
 .pricing-card {
 	width: 380px;
 }
+
+/* .gradient-border {
+	background-image: linear-gradient(white, white),
+		linear-gradient(90deg, #ff8fa76b, #0110f047);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+} */

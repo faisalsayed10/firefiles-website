@@ -10,7 +10,7 @@ const About = () => {
 							About
 						</span>
 						<h1 className="text-gray-900 md:text-5xl lg:text-5xl mb-8 text-4xl font-bold leading-none tracking-tighter">
-							WTH's Firefiles?
+							What's Firefiles?
 						</h1>
 						<p className="mb-8 text-base leading-relaxed text-left text-gray-500">
 							Firefiles is a SaaS which provides you with a drive like interface for your Firebase
