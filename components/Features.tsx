@@ -1,21 +1,40 @@
 import React from "react";
+import useAnimateOnInView from "../hooks/useAnimateOnInView";
 import FeatureCard from "./FeatureCard";
 import Documentation from "./icons/Documentation";
 import Download from "./icons/Download";
 import FilePreview from "./icons/FilePreview";
 import Lock from "./icons/Lock";
 
+const cardVariant = {
+	visible: {
+		opacity: 1,
+		transition: { duration: 0.5, ease: "backOut", delay: 0.2 },
+		translateY: 0
+	},
+	hidden: { opacity: 0, translateY: 100 }
+};
+
 const Features = () => {
+	const { ref, controls } = useAnimateOnInView();
+
 	return (
 		<section id="features">
 			<div className="features-main pb-20">
-				<div className="px-5 grid grid-cols-1 gap-2 gap-y-4 md:grid-cols-2 lg:grid-cols-3 h-full">
+				<div
+					ref={ref}
+					className="px-5 grid grid-cols-1 gap-2 gap-y-4 md:grid-cols-2 lg:grid-cols-3 h-full"
+				>
 					<FeatureCard
+						controls={controls}
+						variants={cardVariant}
 						title="Documentation"
 						subtitle="Everything you need to know about Firefiles, at one place."
 						icon={<Documentation />}
 					/>
 					<FeatureCard
+						controls={controls}
+						variants={cardVariant}
 						title="Open Source"
 						subtitle="Yeah you got it right! We're fully open-sourced on GitHub."
 						icon={
@@ -37,6 +56,8 @@ const Features = () => {
 						}
 					/>
 					<FeatureCard
+						controls={controls}
+						variants={cardVariant}
 						title="Clean UI"
 						subtitle="A clean UI for managing your files and folders efficiently."
 						icon={
@@ -60,16 +81,22 @@ const Features = () => {
 						}
 					/>
 					<FeatureCard
+						controls={controls}
+						variants={cardVariant}
 						title="Direct Download & Share"
 						subtitle="Directly download and share files right from the browser."
 						icon={<Download />}
 					/>
 					<FeatureCard
+						controls={controls}
+						variants={cardVariant}
 						title="Security"
 						subtitle="Your keys are stored safely with us encrypted with AES-256 algorithm."
 						icon={<Lock />}
 					/>
 					<FeatureCard
+						controls={controls}
+						variants={cardVariant}
 						title="File Previews"
 						subtitle="Preview all your files right in your browser. (coming soon)"
 						icon={<FilePreview />}

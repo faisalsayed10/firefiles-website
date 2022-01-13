@@ -1,10 +1,16 @@
-import React from "react";
+import { motion } from "framer-motion";
+import useAnimateOnInView from "../hooks/useAnimateOnInView";
 import ArrowRight from "./icons/ArrowRight";
 import Check from "./icons/Check";
 
-interface Props {}
+const variants = {
+	visible: { scale: 1, transition: { duration: 0.5, ease: "backOut" } },
+	hidden: { scale: 0.9 }
+};
 
-const Pricing = (props: Props) => {
+const Pricing = () => {
+	const { ref, controls } = useAnimateOnInView();
+
 	return (
 		<section className="text-gray-600 body-font overflow-hidden" id="pricing">
 			<div className="container px-5 mx-auto pb-20">
@@ -19,8 +25,13 @@ const Pricing = (props: Props) => {
 						<div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
 					</div>
 				</div>
-				<div className="flex flex-wrap -m-4 justify-center">
-					<div className="p-4 pricing-card">
+				<div ref={ref} className="flex flex-wrap -m-4 justify-center">
+					<motion.div
+						animate={controls}
+						initial="hidden"
+						variants={variants}
+						className="p-4 pricing-card"
+					>
 						<div className="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
 							<span className="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
 								POPULAR
@@ -49,8 +60,13 @@ const Pricing = (props: Props) => {
 							</a>
 							<p className="text-xs text-gray-500 mt-3">Free to all users while in beta.</p>
 						</div>
-					</div>
-					<div className="p-4 pricing-card">
+					</motion.div>
+					<motion.div
+						animate={controls}
+						initial="hidden"
+						variants={variants}
+						className="p-4 pricing-card"
+					>
 						<div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
 							<h2 className="text-sm tracking-widest title-font mb-1 font-medium">SELF-HOSTED</h2>
 							<h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
@@ -75,7 +91,7 @@ const Pricing = (props: Props) => {
 							</a>
 							<p className="text-xs text-gray-500 mt-3">100% Free Forever.</p>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>

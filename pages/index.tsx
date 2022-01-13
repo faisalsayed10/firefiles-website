@@ -19,7 +19,7 @@ export default function Home() {
 	return (
 		<div className="main">
 			<Head>
-				<title>Firefiles</title>
+				<title>✨ Firefiles ✨</title>
 			</Head>
 			<Navbar />
 			<Hero />
