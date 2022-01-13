@@ -20,7 +20,7 @@ export default {
 		<>
 			<link rel="icon" href="/firefiles-logo.png" type="image/png" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<meta name="description" content="Get your own personal file hosting service in minutes." />
+			<meta name="description" content="Get your own file hosting service in minutes." />
 			<meta name="og:title" content="Firefiles" />
 		</>
 	)

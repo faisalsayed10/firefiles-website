@@ -5,7 +5,7 @@
 
 # Description
 
-Get your own personal file hosting service in minutes.
+Get your own file hosting service in minutes.
 
 # Features
 
