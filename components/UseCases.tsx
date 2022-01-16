@@ -5,22 +5,9 @@ import Monitor from "./icons/Monitor";
 import Person from "./icons/Person";
 import Sparkle from "./icons/Sparkle";
 
-const variant1 = {
-	visible: {
-		opacity: 1,
-		transition: { duration: 0.4, ease: "easeIn" },
-		translateX: 0
-	},
-	hidden: { opacity: 0, translateX: -100 }
-};
-
-const variant2 = {
-	visible: {
-		opacity: 1,
-		transition: { duration: 0.4, ease: "easeIn" },
-		translateX: 0
-	},
-	hidden: { opacity: 0, translateX: 100 }
+const variants = {
+	visible: { opacity: 1, transition: { duration: 0.4, ease: "easeIn" } },
+	hidden: { opacity: 0 }
 };
 
 const UseCases = () => {
@@ -31,7 +18,7 @@ const UseCases = () => {
 	return (
 		<section className="text-gray-600 body-font min-h-screen" id="use-cases">
 			<div className="container px-5 mx-auto pb-20 relative">
-				<div className="bg-fuchsia-100 top-24 left-20 w-64 h-64 md:w-80 md:h-80 mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-1000 duration-1000 absolute rounded-full -z-10" />
+				<div className="bg-fuchsia-100 top-24 left-20 w-64 h-64 md:w-80 md:h-80 mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-1000 duration-1000 absolute rounded-full -z-10 hidden sm:block" />
 				<div className="text-center mb-20">
 					<h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
 						Use Cases
@@ -47,7 +34,7 @@ const UseCases = () => {
 					ref={ref}
 					animate={controls}
 					initial="hidden"
-					variants={variant1}
+					variants={variants}
 					className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
 				>
 					<div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
@@ -70,7 +57,7 @@ const UseCases = () => {
 					ref={ref2}
 					animate={controls2}
 					initial="hidden"
-					variants={variant2}
+					variants={variants}
 					className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
 				>
 					<div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
@@ -93,7 +80,7 @@ const UseCases = () => {
 					ref={ref3}
 					animate={controls3}
 					initial="hidden"
-					variants={variant1}
+					variants={variants}
 					className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col"
 				>
 					<div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
