@@ -1,6 +1,7 @@
 {
 	"index": "Introduction",
 	"get-started": "Get Started",
+	"cors": "CORS Settings",
 	"hosted": "Hosted",
 	"self-hosted": "Self-Hosted"
 }
