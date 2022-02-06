@@ -13,7 +13,7 @@ Get a Google Drive like interface for your storage buckets!
 
 - Manage files in the browser.
 - Easily download and share files.
-- File previews (coming soon!)
+- Preview files directly in the browser.
 - AWS S3 support (coming soon!)
 
 # Screenshots

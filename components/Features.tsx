@@ -98,7 +98,7 @@ const Features = () => {
 						controls={controls}
 						variants={cardVariant}
 						title="File Previews"
-						subtitle="Preview all your files right in your browser. (coming soon)"
+						subtitle="Preview all your files right in your browser."
 						icon={<FilePreview />}
 					/>
 				</div>
