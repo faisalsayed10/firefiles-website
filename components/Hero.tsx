@@ -61,7 +61,7 @@ const Hero = () => {
 						>
 							<a
 								href="/docs"
-								className="inline-flex items-center justify-center px-8 py-3 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none"
+								className="inline-flex w-full items-center justify-center px-8 py-3 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none"
 							>
 								View docs
 							</a>
