@@ -1,42 +1,33 @@
 import React from "react";
+import { Bucket, FileSearch, Lock, Moon, Users } from "tabler-icons-react";
 import useAnimateOnInView from "../hooks/useAnimateOnInView";
 import FeatureCard from "./FeatureCard";
-import Documentation from "./icons/Documentation";
-import Download from "./icons/Download";
-import FilePreview from "./icons/FilePreview";
-import Lock from "./icons/Lock";
 
 const cardVariant = {
 	visible: {
 		opacity: 1,
 		transition: { duration: 0.5, ease: "backOut", delay: 0.2 },
-		translateY: 0
+		translateY: 0,
 	},
-	hidden: { opacity: 0, translateY: 100 }
+	hidden: { opacity: 0, translateY: 100 },
 };
 
 const Features = () => {
 	const { ref, controls } = useAnimateOnInView();
 
 	return (
-		<section id="features">
-			<div className="features-main pb-20">
-				<div
-					ref={ref}
-					className="px-5 grid grid-cols-1 gap-2 gap-y-4 md:grid-cols-2 lg:grid-cols-3 h-full"
-				>
+		<section>
+			<div className="max-w-screen-lg relative mx-auto lg:!pt-12 lg:!pb-12 items-center">
+				<div className="text-center pb-6 text-[#ecf0f1]">
+					<h1 className="pb-3 text-5xl font-bold relative z-10 leading-snug">
+						A seamless experience
+						<br /> for your storage buckets.
+					</h1>
+				</div>
+				<div ref={ref} className="grid grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-y-2 md:gap-y-8 gap-x-8 relative z-10">
 					<FeatureCard
-						controls={controls}
-						variants={cardVariant}
-						title="Documentation"
-						subtitle="Everything you need to know about Firefiles, at one place."
-						icon={<Documentation />}
-					/>
-					<FeatureCard
-						controls={controls}
-						variants={cardVariant}
 						title="Open Source"
-						subtitle="Yeah you got it right! We're fully open-sourced on GitHub."
+						subtitle="Fully open-sourced on GitHub."
 						icon={
 							<svg
 								fill="currentColor"
@@ -54,54 +45,46 @@ const Features = () => {
 								></path>
 							</svg>
 						}
-					/>
-					<FeatureCard
 						controls={controls}
 						variants={cardVariant}
-						title="Clean UI"
-						subtitle="A clean UI for managing your files and folders efficiently."
-						icon={
-							<svg
-								fill="none"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth="2"
-								xmlns="http://www.w3.org/2000/svg"
-								className="h-6 w-6"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-							>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-								/>
-							</svg>
-						}
 					/>
 					<FeatureCard
-						controls={controls}
-						variants={cardVariant}
-						title="Direct Download & Share"
-						subtitle="Directly download and share files right from the browser."
-						icon={<Download />}
-					/>
-					<FeatureCard
-						controls={controls}
-						variants={cardVariant}
 						title="Security"
-						subtitle="Your keys are stored safely with us encrypted with AES-256 algorithm."
+						subtitle="Get 10x more security and privacy, compared to Google Drive and Dropbox."
 						icon={<Lock />}
-					/>
-					<FeatureCard
 						controls={controls}
 						variants={cardVariant}
+					/>
+					<FeatureCard
+						title="Light and dark UI"
+						subtitle="Switch between light and dark themes according to your choice."
+						icon={<Moon />}
+						controls={controls}
+						variants={cardVariant}
+					/>
+					<FeatureCard
 						title="File Previews"
 						subtitle="Preview all your files right in your browser."
-						icon={<FilePreview />}
+						icon={<FileSearch />}
+						controls={controls}
+						variants={cardVariant}
+					/>
+					<FeatureCard
+						title="AWS Support"
+						subtitle="Use s3 buckets as your cloud drives."
+						icon={<Bucket />}
+						controls={controls}
+						variants={cardVariant}
+					/>
+					<FeatureCard
+						title="Individuals & teams"
+						subtitle="Invite your teams to your cloud drives. (coming soon)"
+						icon={<Users />}
+						controls={controls}
+						variants={cardVariant}
 					/>
 				</div>
+				<div className="blur-gradient bottom-0 z-0 !opacity-30"></div>
 			</div>
 		</section>
 	);

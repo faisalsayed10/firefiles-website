@@ -14,16 +14,18 @@ const FeatureCard: React.FC<Props> = ({ title, subtitle, icon, controls, variant
 			animate={controls}
 			initial="hidden"
 			variants={variants}
-			className="flex flex-wrap items-center justify-around max-w-4xl sm:w-full z-10"
+			className="text-left p-4 md:p-8 rounded-md h-52"
+			style={{
+				background: "radial-gradient(circle at top, rgba(41,41,46,1) 0%, rgba(25,25,28,1) 100%)",
+				boxShadow: "0px 11.4128px 35.1163px rgba(0, 0, 0, 0.3)",
+			}}
 		>
-			<div className="border p-6 text-left w-96 rounded-xl bg-white gradient-border">
-				<div>
-					<div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-						{icon}
-					</div>
-					<h2 className="text-xl font-semibold text-gray-900 title-font mb-2">{title}</h2>
-					<p className="leading-relaxed mt-4">{subtitle}</p>
-				</div>
+			<div className="text-[#4c3cfe] font-bold text-xl mb-4">{icon}</div>
+			<div>
+				<p className="pb-2">
+					<strong>{title}</strong>
+				</p>
+				<p className="text-gray-500">{subtitle}</p>
 			</div>
 		</motion.div>
 	);
