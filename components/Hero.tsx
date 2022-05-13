@@ -3,71 +3,58 @@ import { motion } from "framer-motion";
 const Hero = () => {
 	return (
 		<div className="hero-main">
-			<div className="hero-img">
-				<div className="flex min-h-screen hero-bg relative items-center justify-center flex-col">
-					<div className="blur-gradient -z-10" />
-					<motion.h1
-						initial={{ scale: 0.5, opacity: 0, skewX: "-5deg" }}
-						animate={{ scale: 1, opacity: 1, skewX: "0deg" }}
-						transition={{ duration: 0.7, ease: "backOut" }}
-						className="font-semibold text-6xl md:text-8xl"
+			<div className="flex min-h-screen relative items-center mt-40 flex-col">
+				<div className="blur-gradient -z-10" />
+				<motion.h1
+					initial={{ scale: 0.5, opacity: 0, skewX: "-5deg" }}
+					animate={{ scale: 1, opacity: 1, skewX: "0deg" }}
+					transition={{ duration: 0.7, ease: "backOut" }}
+					className="font-black text-6xl max-w-2xl text-center mb-10"
+				>
+					The open-source alternative to Dropbox
+				</motion.h1>
+				<motion.p
+					initial={{ scale: 0.5, opacity: 0, skewX: "-5deg" }}
+					animate={{ scale: 1, opacity: 1, skewX: "0deg" }}
+					transition={{ duration: 0.7, ease: "backOut" }}
+					className="text-xl text-center max-w-2xl text-gray-400"
+				>
+					Firefiles lets you setup a cloud drive with the backend of your choice and lets you
+					seamlessly manage your files across multiple providers.
+				</motion.p>
+				<motion.div
+					initial={{ opacity: 0, translateY: 10 }}
+					animate={{ opacity: 1, translateY: 0 }}
+					transition={{ duration: 0.3, delay: 0 }}
+					className="mt-5 sm:mt-8 mb-10 sm:flex sm:justify-center lg:justify-start z-10"
+				>
+					<a
+						href="https://usefirefiles.vercel.app"
+						className="px-7 py-3.5 rounded-lg relative group text-white font-medium inline-block"
 					>
-						Firefiles
-					</motion.h1>
-					<motion.p
-						initial={{ scale: 0.5, opacity: 0, skewX: "-5deg" }}
-						animate={{ scale: 1, opacity: 1, skewX: "0deg" }}
-						transition={{ duration: 0.7, ease: "backOut" }}
-						className="text-xl md:text-3xl text-center"
-					>
-						Get your own file hosting service in minutes.
-					</motion.p>
-					<div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-						<motion.div
-							initial={{ opacity: 0, translateY: 10 }}
-							animate={{ opacity: 1, translateY: 0 }}
-							transition={{ duration: 0.3, delay: 0 }}
-						>
-							<a
-								href="#pricing"
-								className="box-border relative z-30 h-full inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ease focus:outline-none"
+						<span className="absolute top-0 left-0 w-full h-full rounded-lg opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"></span>
+						<span className="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded-lg opacity-50 from-purple-600 to-blue-500"></span>
+						<span className="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded-lg shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-purple-600 to-blue-500"></span>
+						<span className="absolute inset-0 w-full h-full transition duration-200 ease-out rounded-lg bg-gradient-to-br to-purple-600 from-blue-500"></span>
+						<span className="relative text-lg">
+							Sign up for free{" "}
+							<svg
+								className="w-4 h-4 ml-1 inline"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 20 20"
+								fill="currentColor"
 							>
-								<span className="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
-								<span className="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
-								<span className="relative z-20 flex items-center text-sm">
-									<svg
-										className="relative w-5 h-5 mr-2 text-white"
-										fill="none"
-										stroke="currentColor"
-										viewBox="0 0 24 24"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="2"
-											d="M13 10V3L4 14h7v7l9-11h-7z"
-										></path>
-									</svg>
-									Try Now
-								</span>
-							</a>
-						</motion.div>
-						<motion.div
-							className="mt-3 sm:mt-0 sm:ml-3"
-							initial={{ opacity: 0, translateY: 10 }}
-							animate={{ opacity: 1, translateY: 0 }}
-							transition={{ duration: 0.3, delay: 0 }}
-						>
-							<a
-								href="/docs"
-								className="inline-flex w-full items-center justify-center px-8 py-3 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none"
-							>
-								View docs
-							</a>
-						</motion.div>
-					</div>
-				</div>
+								<path
+									fillRule="evenodd"
+									d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+									clipRule="evenodd"
+								></path>
+							</svg>
+						</span>
+					</a>
+				</motion.div>
+				<img src="/firefiles-demo3.png" className="w-[75%] rounded-md z-10 shadow-lg" />
+				<div className="blur-gradient bottom-0 z-0"></div>
 			</div>
 		</div>
 	);
