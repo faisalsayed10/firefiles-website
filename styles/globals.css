@@ -9,18 +9,6 @@
 
 .main {
 	font-family: "Inter", sans-serif;
-	background-image: url("/wave-haikei.svg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: bottom;
-}
-
-.hero-bg {
-	background: linear-gradient(90deg, #d8f3ff, #ff8fa76b, #0110f047);
-}
-
-.about-bg {
-	background-color: #1f2937;
 }
 
 .blur-gradient {
@@ -33,12 +21,6 @@
 	filter: blur(100px);
 	background: radial-gradient(circle at 50% 50%, #4c00ff, #4c00ff00);
 	opacity: 0.5;
-}
-
-.hero-img {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("/lines.svg");
 }
 
 .pricing-card {
