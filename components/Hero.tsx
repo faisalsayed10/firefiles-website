@@ -17,7 +17,7 @@ const Hero = () => {
 					initial={{ scale: 0.5, opacity: 0, skewX: "-5deg" }}
 					animate={{ scale: 1, opacity: 1, skewX: "0deg" }}
 					transition={{ duration: 0.7, ease: "backOut" }}
-					className="text-xl text-center max-w-2xl text-gray-400"
+					className="text-xl text-center max-w-2xl text-gray-400 z-10"
 				>
 					Firefiles lets you setup a cloud drive with the backend of your choice and lets you
 					seamlessly manage your files across multiple providers.

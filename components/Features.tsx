@@ -17,7 +17,7 @@ const Features = () => {
 
 	return (
 		<section>
-			<div className="max-w-screen-lg relative mx-auto lg:!pt-12 lg:!pb-12 items-center">
+			<div className="max-w-screen-lg relative mx-auto lg:!pt-12 items-center" id="features">
 				<div className="text-center pb-6 text-[#ecf0f1]">
 					<h1 className="pb-3 text-5xl font-bold relative z-10 leading-snug">
 						A seamless experience
@@ -27,7 +27,7 @@ const Features = () => {
 				<div ref={ref} className="grid grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-y-2 md:gap-y-8 gap-x-8 relative z-10">
 					<FeatureCard
 						title="Open Source"
-						subtitle="Fully open-sourced on GitHub."
+						subtitle="The entire code is fully open-sourced on Github."
 						icon={
 							<svg
 								fill="currentColor"

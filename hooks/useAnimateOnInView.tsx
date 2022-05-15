@@ -10,9 +10,9 @@ const useAnimateOnInView = () => {
 		if (inView) {
 			controls.start("visible");
 		}
-		if (!inView) {
-			controls.start("hidden");
-		}
+		// if (!inView) {
+		// 	controls.start("hidden");
+		// }
 	}, [controls, inView]);
 
 	return { ref, controls };
