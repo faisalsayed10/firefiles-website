@@ -1,33 +1,99 @@
-import React from "react";
+import { BrandGithub, BrandTwitter } from "tabler-icons-react";
 
 const Navbar = () => {
 	return (
-		<div className="flex justify-between items-center absolute w-full z-50 px-4 my-2">
-			<img className="h-16 w-16" src="/firefiles-logo.png" alt="logo" />
-			<div className="hidden items-center justify-evenly w-3/5 sm:flex">
-				<a href="#about" className="text-lg font-normal text-gray-500 hover:text-gray-900 mx-1">
-					About
-				</a>
-				<a href="#features" className="text-lg font-normal text-gray-500 hover:text-gray-900 mx-1">
-					Features
-				</a>
-				<a href="#use-cases" className="text-lg font-normal text-gray-500 hover:text-gray-900 mx-1">
-					Use Cases
-				</a>
-				<a href="#pricing" className="text-lg font-normal text-gray-500 hover:text-gray-900 mx-1">
-					Pricing
-				</a>
-			</div>
-			<div className="inline-flex rounded-md shadow h-10">
-				<a
-					href="https://usefirefiles.vercel.app"
-					target="_blank"
-					className="inline-flex items-center justify-center px-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
-				>
-					Go to App
-				</a>
-			</div>
-		</div>
+		<header className="sticky flex items-center justify-around top-0 z-50 bg-opacity-20 dark:bg-opacity-20 border-b bg-black border-white/10 backdrop-blur-md backdrop-saturate-200 h-20">
+			<nav className="flex flex-col w-[90%] my-0 mx-auto p-2 text-center max-w-[1440px]">
+				<div className="flex justify-between">
+					<a href="/">
+						<div className="flex flex-row items-center flex-none flex-nowrap font-medium text-xl mb-1 min-w-[60px]">
+							<img src="/firefiles-logo.png" alt="logo" className="h-10 w-10" />
+							<span className="ml-1 text-white">Firefiles</span>
+						</div>
+					</a>
+					<div className="hidden sm:flex items-center justify-evenly w-[60%]">
+						<a
+							className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+							href="/docs"
+						>
+							Documentation
+						</a>
+						<a
+							className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+							href="#features"
+						>
+							Features
+						</a>
+						<a
+							className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+							href="https://discord.com"
+							target="_blank"
+						>
+							Community
+						</a>
+						<a
+							className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+							href="#pricing"
+						>
+							Pricing
+						</a>
+						<a
+							className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+							href="/faq"
+						>
+							FAQ
+						</a>
+					</div>
+					<div className="flex items-center justify-between w-[60px]">
+						<a
+							href="https://twitter.com/tryfirefiles"
+							className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+						>
+							<BrandTwitter />
+						</a>
+						<a
+							href="https://github.com/faisalsayed10/firefiles"
+							className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+						>
+							<BrandGithub />
+						</a>
+					</div>
+				</div>
+				<div className="flex sm:hidden items-center justify-between w-full mx-auto">
+					<a
+						className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+						href="/docs"
+					>
+						Docs
+					</a>
+					<a
+						className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+						href="#features"
+					>
+						Features
+					</a>
+					<a
+						className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+						href="https://discord.com"
+						target="_blank"
+					>
+						Community
+					</a>
+					<a
+						className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+						href="#pricing"
+					>
+						Pricing
+					</a>
+					<a
+						className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
+						href="/faq"
+					>
+						FAQ
+					</a>
+				</div>
+			</nav>
+		</header>
 	);
 };
 
