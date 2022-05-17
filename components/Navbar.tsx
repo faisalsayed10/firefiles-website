@@ -6,8 +6,8 @@ const Navbar = () => {
 			<nav className="flex flex-col w-[90%] my-0 mx-auto p-2 text-center max-w-[1440px]">
 				<div className="flex justify-between">
 					<a href="/">
-						<div className="flex flex-row items-center flex-none flex-nowrap font-medium text-xl mb-1 min-w-[60px]">
-							<img src="/firefiles-logo.png" alt="logo" className="h-10 w-10" />
+						<div className="flex flex-row items-center flex-none flex-nowrap font-medium text-xl mb-1 min-w-[60px] gap-2">
+							<img src="/logo.png" alt="logo" className="h-10 w-10 rounded-md" />
 							<span className="ml-1 text-white">Firefiles</span>
 						</div>
 					</a>
@@ -65,12 +65,6 @@ const Navbar = () => {
 						href="/docs"
 					>
 						Docs
-					</a>
-					<a
-						className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
-						href="#features"
-					>
-						Features
 					</a>
 					<a
 						className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"

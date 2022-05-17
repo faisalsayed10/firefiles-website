@@ -1,7 +1,7 @@
 const CallToAction = () => {
 	return (
-		<div className="flex relative items-center my-24 flex-col">
-			<img src="/firefiles-logo.png" className="w-24 h-24 mb-12" />
+		<div className="flex relative items-center my-20 flex-col">
+			<img src="/logo.png" className="w-40 h-40 mb-12 rounded-md" />
 			<h1 className="font-bold text-5xl max-w-3xl text-center mb-6">
 				Get started with Firefiles today.
 			</h1>

@@ -9,7 +9,7 @@ const Hero = () => {
 					initial={{ scale: 0.5, opacity: 0, skewX: "-5deg" }}
 					animate={{ scale: 1, opacity: 1, skewX: "0deg" }}
 					transition={{ duration: 0.7, ease: "backOut" }}
-					className="font-black text-6xl max-w-2xl text-center mb-10"
+					className="font-black text-4xl sm:text-6xl max-w-2xl text-center mb-10"
 				>
 					The open-source alternative to Dropbox
 				</motion.h1>

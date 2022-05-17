@@ -6,22 +6,25 @@ const Footer = () => {
 			<div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
 				<div className="w-64 flex-sh`	rink-0 md:mx-0 mx-auto text-center md:text-left">
 					<a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-						<img src="/firefiles-logo.png" className="w-10 h-10" />
+						<img src="/logo.png" className="w-10 h-10" />
 						<span className="ml-3 text-xl">Firefiles</span>
 					</a>
 					<p className="mt-2 text-sm text-gray-500">© Copyright 2022 Faisal Sayed</p>
 					<span className="inline-flex mt-5 justify-center sm:justify-start">
-						<a className="text-gray-400" href="https://twitter.com/tryfirefiles">
+						<a className="text-gray-400 hover:text-white" href="https://twitter.com/tryfirefiles">
 							<BrandTwitter />
 						</a>
-						<a className="ml-3 text-gray-400" href="https://discord.com">
+						<a className="ml-3 text-gray-400 hover:text-white" href="https://discord.com">
 							<BrandDiscord />
 						</a>
-						<a className="ml-3 text-gray-400" href="https://github.com/faisalsayed10/firefiles">
+						<a
+							className="ml-3 text-gray-400 hover:text-white"
+							href="https://github.com/faisalsayed10/firefiles"
+						>
 							<BrandGithub />
 						</a>
 						<a
-							className="ml-3 text-gray-400"
+							className="ml-3 text-gray-400 hover:text-white"
 							href="https://opencollective.com/faisalsayed10/projects/firefiles"
 						>
 							<Coin />
