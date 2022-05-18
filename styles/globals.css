@@ -27,9 +27,16 @@
 	width: 380px;
 }
 
-/* .gradient-border {
-	background-image: linear-gradient(white, white),
-		linear-gradient(90deg, #ff8fa76b, #0110f047);
-	background-origin: border-box;
-	background-clip: content-box, border-box;
-} */
+.floss {
+	background-image: url("/floss.png");
+	background-size: cover;
+}
+
+.blossom {
+	background-image: url("/blossom.png");
+	background-size: cover;
+}
+.glass-rainbow {
+	background-image: url("/glass-rainbow.png");
+	background-size: cover;
+}
