@@ -1,97 +1,82 @@
-import { motion } from "framer-motion";
-import useAnimateOnInView from "../hooks/useAnimateOnInView";
-import ArrowRight from "./icons/ArrowRight";
-import Check from "./icons/Check";
-
-const variants = {
-	visible: { scale: 1, transition: { duration: 0.5, ease: "backOut" } },
-	hidden: { scale: 0.9 }
-};
+import { useState } from "react";
+import PricingCard from "./PricingCard";
 
 const Pricing = () => {
-	const { ref, controls } = useAnimateOnInView();
+	const [isMonthly, setIsMonthly] = useState(true);
 
 	return (
-		<section className="text-gray-600 body-font overflow-hidden" id="pricing">
-			<div className="container px-5 mx-auto pb-20">
-				<div className="text-center mb-20">
-					<h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-						Pricing
-					</h1>
-					<p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-						Flexible and cheap. Choose from hosting it yourself or using the hosted version.
-					</p>
-					<div className="flex mt-6 justify-center">
-						<div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+		<section className="mt-20 relative z-20 overflow-hidden" id="pricing">
+			<div className="m-auto">
+				<div className="flex flex-wrap">
+					<div className="w-full px-4">
+						<div className="text-center mx-auto max-w-[510px]">
+							<span className="font-semibold text-lg text-primary mb-2 block">Pricing</span>
+							<h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4">
+								Our Pricing Plan
+							</h2>
+							<p className="text-base text-body-color">
+								Simple affordable pricing. No hidden costs. Cancel anytime.
+							</p>
+						</div>
 					</div>
 				</div>
-				<div ref={ref} className="flex flex-wrap -m-4 justify-center">
-					<motion.div
-						animate={controls}
-						initial="hidden"
-						variants={variants}
-						className="p-4 pricing-card"
-					>
-						<div className="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
-							<span className="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
-								POPULAR
-							</span>
-							<h2 className="text-sm tracking-widest title-font mb-1 font-medium">HOSTED</h2>
-							<h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-								<span>$0</span>
-								<span className="text-lg ml-1 font-normal text-gray-500">/mo</span>
-							</h1>
-							<p className="flex items-center text-gray-600 mb-2">
-								<Check /> Plug and Play.
-							</p>
-							<p className="flex items-center text-gray-600 mb-2">
-								<Check /> Access to all features.
-							</p>
-							<p className="flex items-center text-gray-600 mb-2">
-								<Check /> 24/7 email support.
-							</p>
-							<p className="flex items-center text-gray-600 mb-6">
-								<Check /> Instant updates.
-							</p>
-							<a href="https://usefirefiles.vercel.app" target="_blank" className="mt-auto">
-								<button className="flex items-center text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">
-									Try Now <ArrowRight />
-								</button>
-							</a>
-							<p className="text-xs text-gray-500 mt-3">Free to all users while in beta.</p>
+				<div className="flex items-center justify-center gap-4 my-5">
+					<p>Monthly</p>
+					<input
+						type="checkbox"
+						className="toggle toggle-lg"
+						checked={!isMonthly}
+						onChange={() => setIsMonthly((prev) => !prev)}
+					/>
+					<p>Yearly</p>
+				</div>
+				<div className="flex flex-wrap justify-center mx-5">
+					<PricingCard
+						title="Basic"
+						price="Free"
+						monthly={isMonthly}
+						features={["2 drives", "3 providers", "Limited features", "Free updates"]}
+						subtitle="Perfect for exploring our product and how it works."
+					/>
+					<PricingCard
+						title="Premium"
+						price={isMonthly ? "$10" : "$100"}
+						monthly={isMonthly}
+						features={[
+							"Unlimited drives",
+							"Unlimited providers",
+							"Invite upto 3 users",
+							"All features",
+							"Free updates",
+						]}
+						subtitle="Perfect for users having a lot of drives to manage."
+					/>
+					<PricingCard
+						title="Team"
+						price={isMonthly ? "$20" : "$200"}
+						monthly={isMonthly}
+						features={[
+							"Unlimited drives",
+							"Unlimited providers",
+							"Invite upto 10 users (+$2 from then on)",
+							"All features",
+							"Free updates",
+						]}
+						subtitle="Perfect for teams wanting to share their buckets."
+					/>
+				</div>
+				<div className="divider before:bg-gray-800 after:bg-gray-800 max-w-lg mx-auto px-4">OR</div>
+				<div className="flex justify-center">
+					<div className="bg-gray-900 rounded-xl p-5 mx-4 sm:p-10 max-w-3xl">
+						<div className="badge badge-lg badge-outline">Self Host</div>
+						<div className="flex items-center justify-between flex-col sm:flex-row">
+							<h4 className="mt-4 max-w-xl">
+								Set up and manage your own Firefiles instance. Get access to all the features. Free
+								forever. No limits.
+							</h4>
+							<button className="btn mt-4 ml-4">Host your own instance</button>
 						</div>
-					</motion.div>
-					<motion.div
-						animate={controls}
-						initial="hidden"
-						variants={variants}
-						className="p-4 pricing-card"
-					>
-						<div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
-							<h2 className="text-sm tracking-widest title-font mb-1 font-medium">SELF-HOSTED</h2>
-							<h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
-								Free
-							</h1>
-							<p className="flex items-center text-gray-600 mb-2">
-								<Check /> Deploy your own instance.
-							</p>
-							<p className="flex items-center text-gray-600 mb-2">
-								<Check /> Access to all features.
-							</p>
-							<p className="flex items-center text-gray-600 mb-2">
-								<Check /> 24/7 email support.
-							</p>
-							<p className="flex items-center text-gray-600 mb-6">
-								<Check color="bg-gray-400" /> Re-deploy to update.
-							</p>
-							<a href="/docs" className="mt-auto">
-								<button className="flex items-center text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">
-									View Docs <ArrowRight />
-								</button>
-							</a>
-							<p className="text-xs text-gray-500 mt-3">100% Free Forever.</p>
-						</div>
-					</motion.div>
+					</div>
 				</div>
 			</div>
 		</section>
