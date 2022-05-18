@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 const Hero = () => {
 	return (
 		<div className="hero-main">
-			<div className="flex min-h-screen relative items-center mt-40 flex-col">
+			<div className="flex min-h-screen relative items-center mt-40 mx-5 flex-col">
 				<div className="blur-gradient -z-10" />
 				<motion.h1
 					initial={{ scale: 0.5, opacity: 0, skewX: "-5deg" }}
 					animate={{ scale: 1, opacity: 1, skewX: "0deg" }}
 					transition={{ duration: 0.7, ease: "backOut" }}
-					className="font-black text-4xl sm:text-6xl max-w-2xl text-center mb-10"
+					className="font-black text-5xl sm:text-6xl max-w-2xl text-center mb-10"
 				>
-					The open-source alternative to Dropbox
+					The open&#8209;source alternative to Dropbox
 				</motion.h1>
 				<motion.p
 					initial={{ scale: 0.5, opacity: 0, skewX: "-5deg" }}

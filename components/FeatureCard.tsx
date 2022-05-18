@@ -14,7 +14,7 @@ const FeatureCard: React.FC<Props> = ({ title, subtitle, icon, controls, variant
 			animate={controls}
 			initial="hidden"
 			variants={variants}
-			className="text-left p-4 md:p-8 rounded-md h-52"
+			className="text-left p-8 rounded-md h-52"
 			style={{
 				background: "radial-gradient(circle at top, rgba(41,41,46,1) 0%, rgba(25,25,28,1) 100%)",
 				boxShadow: "0px 11.4128px 35.1163px rgba(0, 0, 0, 0.3)",

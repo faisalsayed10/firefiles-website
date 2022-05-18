@@ -1,4 +1,5 @@
-import { BrandGithub, BrandTwitter } from "tabler-icons-react";
+import toast from "react-hot-toast";
+import { BrandGithub, BrandTwitter, Businessplan } from "tabler-icons-react";
 
 const Navbar = () => {
 	return (
@@ -32,8 +33,10 @@ const Navbar = () => {
 							Community
 						</a>
 						<a
-							className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
-							href="#pricing"
+							className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300 cursor-pointer"
+							onClick={() =>
+								toast("We're free until we figure out our pricing :p", { icon: <Businessplan /> })
+							}
 						>
 							Pricing
 						</a>
@@ -74,8 +77,10 @@ const Navbar = () => {
 						Community
 					</a>
 					<a
-						className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300"
-						href="#pricing"
+						className="text-sm text-[#ccc] hover:text-[#ecf0f1] transition duration-300 cursor-pointer"
+						onClick={() =>
+							toast("We're free until we figure out our pricing :p", { icon: <Businessplan /> })
+						}
 					>
 						Pricing
 					</a>

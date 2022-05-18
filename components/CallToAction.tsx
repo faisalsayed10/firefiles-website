@@ -1,15 +1,17 @@
+import { BrandOpenSource } from "tabler-icons-react";
+
 const CallToAction = () => {
 	return (
-		<div className="flex relative items-center my-20 flex-col">
+		<div className="flex relative items-center my-20 flex-col mx-5">
 			<img src="/logo.png" className="w-40 h-40 mb-12 rounded-md" />
-			<h1 className="font-bold text-5xl max-w-3xl text-center mb-6">
+			<h1 className="font-black text-5xl max-w-3xl text-center mb-6">
 				Get started with Firefiles today.
 			</h1>
 			<p className="text-xl text-center max-w-3xl text-gray-400 mb-10">
 				Firefiles turns your storage buckets into cloud drives and lets you manage all your storage
 				buckets at one place.
 			</p>
-			<div className="sm:flex sm:justify-center lg:justify-start z-10">
+			<div className="flex sm:flex-row flex-col justify-center gap-5 z-10">
 				<a
 					href="https://usefirefiles.vercel.app"
 					className="px-7 py-3.5 rounded-lg relative group text-white font-medium inline-block"
@@ -33,6 +35,13 @@ const CallToAction = () => {
 							></path>
 						</svg>
 					</span>
+				</a>
+				<a
+					href="/docs/self-hosted/01-setup"
+					className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white border border-indigo-500 rounded-lg shadow-sm cursor-pointer bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500"
+				>
+					<BrandOpenSource className="mr-2" />
+					<span className="relative">Self Host</span>
 				</a>
 			</div>
 		</div>

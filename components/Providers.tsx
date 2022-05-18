@@ -16,7 +16,7 @@ const PROVIDERS = [
 const Providers = () => {
 	return (
 		<div className="flex items-center flex-col mt-10 py-12 relative z-10">
-			<h3 className="text-indigo-500 font-normal tracking-wider mb-12">
+			<h3 className="text-indigo-500 font-normal tracking-wider mb-12 text-center">
 				THE LAST CLOUD STORAGE YOU'LL EVER NEED
 			</h3>
 			<div className="flex justify-evenly w-full flex-wrap max-w-4xl px-10 gap-x-10 gap-y-5">
