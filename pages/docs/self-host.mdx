@@ -7,6 +7,14 @@ import "nextra-theme-docs/style.css";
 - A [SendGrid](https://sendgrid.com/) account to make sure passwordless login works.
 - A MySQL database. (We recommend using [Railway](https://railway.app/) or [PlanetScale](https://planetscale.com/))
 
+**VERY IMPORTANT:** Depending on the database you use, you'll have to change the `vercel-build` script in [package.json](https://github.com/faisalsayed10/firefiles/blob/main/package.json):
+
+As we're using PlanetScale, our script is `prisma generate && prisma db push && next build` but for most of the other databases, you'll have to change it to `prisma generate && prisma migrate && next build`. Search for the specific Prisma integration guides to know more details.
+
+For changing the `package.json` file, you'll have to fork and clone the repository locally and then make the edits and then finally deploy your edited version.
+
+**NOTE:** If you prefer to use PlanetScale, you won't have to make any changes.
+
 ## Deploying with Vercel
 
 We will use [Vercel](https://vercel.com?utm_source=firefiles&utm_medium=docs) to deploy our instance. However, you can use any other hosting service which supports Next.js. Go ahead and create an account on Vercel if you haven't already. (It's free!)
