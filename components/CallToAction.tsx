@@ -37,7 +37,7 @@ const CallToAction = () => {
 					</span>
 				</a>
 				<a
-					href="/docs/self-hosted/01-setup"
+					href="/docs/self-host"
 					className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white border border-indigo-500 rounded-lg shadow-sm cursor-pointer bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500"
 				>
 					<BrandOpenSource className="mr-2" />

@@ -1,7 +1,7 @@
 {
 	"index": "Introduction",
 	"get-started": "Get Started",
-	"cors": "CORS Settings",
-	"hosted": "Hosted",
-	"self-hosted": "Self-Hosted"
+	"firebase": "Firebase",
+	"s3": "AWS S3",
+	"self-host": "Self Host"
 }

@@ -95,7 +95,7 @@ const Footer = () => {
 								</a>
 							</li>
 							<li>
-								<a className="text-gray-400 hover:text-white" href="/docs/self-hosted/01-setup">
+								<a className="text-gray-400 hover:text-white" href="/docs/self-host">
 									Self Host
 								</a>
 							</li>

@@ -8,7 +8,7 @@ export default {
 	customSearch: null,
 	darkMode: true,
 	footer: true,
-	footerText: `MIT ${new Date().getFullYear()} © Faisal Sayed.`,
+	footerText: `GNU GPL-3.0 ${new Date().getFullYear()} © Faisal Sayed.`,
 	footerEditLink: `Edit this page on GitHub`,
 	logo: (
 		<>
