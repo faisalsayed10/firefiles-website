@@ -25,7 +25,7 @@ class MyDocument extends Document {
 					/>
 					<meta
 						property="og:image"
-						content="https://usefirefiles.vercel.app/firefiles-preview.png"
+						content="https://firefiles.vercel.app/firefiles-preview.png"
 					/>
 					<meta property="twitter:card" content="summary_large_image" />
 					<meta property="twitter:url" content="https://firefiles.vercel.app" />
@@ -36,7 +36,7 @@ class MyDocument extends Document {
 					/>
 					<meta
 						property="twitter:image"
-						content="https://usefirefiles.vercel.app/firefiles-preview.png"
+						content="https://firefiles.vercel.app/firefiles-preview.png"
 					/>
 				</Head>
 				<body>
