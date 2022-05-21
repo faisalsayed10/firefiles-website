@@ -1,3 +1,5 @@
+# DEPRECATED. REPO MOVED TO https://github.com/faisalsayed10/firefiles
+
 <div align="center">
       <h1> <img src="https://firefiles.vercel.app/logo.png" width="80px"><br/>Firefiles</h1>
      </div>
